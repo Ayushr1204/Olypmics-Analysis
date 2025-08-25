@@ -12,6 +12,12 @@ region_df = pd.read_csv('noc_regions.csv')
 
 df = preprocessor.preprocess(df, region_df)
 
+st.set_page_config(
+    page_title="WhatsApp Chat Analysis",
+    layout="wide",
+)
+
+
 st.sidebar.title('Olympics Analysis')
 st.sidebar.image('https://upload.wikimedia.org/wikipedia/commons/5/55/Olympic_rings_with_transparent_rims.svg')
 user_menu = st.sidebar.radio(
